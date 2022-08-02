@@ -1,0 +1,76 @@
+.transactions-preview {
+    ul {
+        gap: rem(20px);
+        padding: rem(10px);
+        position: relative;
+        width: fit-content;
+        svg {
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+    .MuiTimelineDot-root {
+        align-self: auto;
+    }
+    .MuiTypography-root {
+        text-align: center;
+        padding: rem(10px);
+        span {
+            font-weight: 600;
+        }
+    }
+    h2 {
+        align-self: center;
+    }
+    .transaction-preview {
+        min-height: rem(85px);
+        display: flex;
+        flex-direction: column;
+        p {
+            margin: auto 0;
+        }
+        .amount {
+            font-weight: 600;
+        }
+        h4 {
+            text-align: start;
+
+            font-weight: 300;
+        }
+    }
+
+    @include for-mobile-layout {
+        ul {
+            width: 100%;
+            gap: rem(10px);
+            padding: rem(5px);
+            svg {
+                width: rem(40px);
+                height: rem(40px);
+            }
+        }
+        h2 {
+            font-size: smaller;
+        }
+        .date {
+            font-size: rem(12px);
+            span {
+                font-size: larger;
+            }
+        }
+        .MuiTypography-root {
+            padding: rem(10px) rem(0px) rem(0px) rem(10px);
+
+            // span {
+            //     font-size: rem(20px);
+            // }
+        }
+        .transaction-preview {
+            min-height: rem(0px);
+            h4 {
+                font-size: rem(12px);
+                // font-weight: 300;
+            }
+        }
+    }
+}

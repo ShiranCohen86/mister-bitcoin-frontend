@@ -1,0 +1,12 @@
+.statistic-page {
+    background-color: $clr2;
+    border: 1px solid black;
+    border-radius: rem(10px);
+    display: flex;
+    flex-direction: column;
+    padding: rem(10px);
+    gap: rem(20px);
+    canvas {
+        width: 100%;
+    }
+}

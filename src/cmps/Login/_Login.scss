@@ -1,0 +1,36 @@
+.login-form {
+    border: 1px solid black;
+
+    .error-input {
+        border: 5px solid red;
+    }
+    .err-msg {
+        color: red;
+        font-weight: 600;
+    }
+    p {
+        color: blue;
+    }
+}
+@include for-mobile-layout {
+    // width: 100%;
+    .login-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.login-loading {
+    max-height: 60vh;
+    max-width: 60vw;
+    position: relative;
+    border-radius: rem(10px);
+}
+
+.error-msg {
+    background-color: #cef6ff;
+    border: 5px dashed red;
+    border-radius: rem(10px);
+    color: red;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,80 @@
+.app-header {
+    padding: 0 rem(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $clr2;
+    border-radius: rem(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    h1 {
+        font-family: "HennyPenny";
+        // font-weight: 300;
+        color: #998b1d;
+    }
+
+    .app-logo {
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        img {
+            width: rem(50px);
+        }
+    }
+
+    p {
+        font-size: rem(15px);
+    }
+    .MuiBox-root {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+    .MuiAvatar-root {
+        margin-left: rem(20px);
+        border-radius: rem(10px);
+        
+        img {
+            border-radius: rem(10px);
+            border: 1px solid black;
+        }
+    }
+    .header-fullname {
+        font-weight: 600;
+    }
+    .MuiButtonBase-root {
+        padding: 0;
+    }
+
+    @include for-mobile-layout {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        h1 {
+            font-size: rem(16px);
+        }
+        p {
+            font-size: rem(12px);
+        }
+        .MuiButtonBase-root {
+            margin-left: rem(5px);
+        }
+
+        .app-logo {
+            img {
+                width: rem(50px);
+            }
+        }
+
+        div:first-child {
+            margin-inline-start: rem(5px);
+        }
+
+        .MuiAvatar-root {
+            width: rem(40px);
+            height: rem(40px);
+        }
+    }
+}

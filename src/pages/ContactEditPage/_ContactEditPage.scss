@@ -1,0 +1,52 @@
+.contact-edit {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: rem(400px);
+        margin: rem(20px) auto;
+        gap: rem(20px);
+        background-color: $clr2;
+        padding: rem(10px);
+        border-radius: rem(10px);
+        border: 1px solid black;
+
+        .contact-name,
+        .contact-email,
+        .contact-phone {
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            input {
+                padding: 5px;
+                text-align: center;
+            }
+        }
+        .contact-img {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-evenly;
+            img {
+                width: rem(100px);
+            }
+        }
+        .actions-btn {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .add-contact-btn {
+                background-color: $clr2;
+                border-radius: rem(10px);
+                width: rem(60px);
+            }
+        }
+    }
+
+    @include for-mobile-layout {
+        form {
+            width: 100%;
+        }
+    }
+}

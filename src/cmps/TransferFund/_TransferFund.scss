@@ -1,0 +1,47 @@
+.loading-transfer {
+    width: rem(320px);
+}
+.contact-details{
+    border: 1px solid black;
+
+}
+.transfer-fund {
+    width: 60%;
+    background-color: $clr2;
+    padding: rem(10px);
+    border-radius: rem(10px);
+    border: 1px solid black;
+
+    form {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        label {
+            font-weight: 600;
+        }
+        input {
+            width: rem(100px);
+        }
+        .send-coin-btn {
+            background-color: $clr2;
+            padding: rem(5px);
+            border-radius: rem(10px);
+            img {
+                width: rem(40px);
+            }
+        }
+    }
+
+    @include for-mobile-layout {
+        width: 100%;
+        form {
+            .send-coin-btn {
+                img {
+                    width: rem(25px);
+                    // height: rem(40px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export { RegisterBtn } from './RegisterBtn'

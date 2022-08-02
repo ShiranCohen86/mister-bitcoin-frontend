@@ -1,0 +1,13 @@
+.contact-filter {
+    background-color: $clr2;
+    padding: rem(10px);
+    border-radius: rem(10px);
+    margin: 0 auto;
+    label {
+        margin-inline-end: 25px;
+    }
+    input{
+        padding: rem(4px);
+
+    }
+}

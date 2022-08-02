@@ -1,0 +1,10 @@
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(50px);
+    justify-content: center;
+
+    @include for-mobile-layout {
+        gap:rem(10px);
+    }
+}

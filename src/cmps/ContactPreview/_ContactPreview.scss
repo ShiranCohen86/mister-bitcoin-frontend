@@ -1,0 +1,40 @@
+.contact-preview {
+    // width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: column;
+    border: 1px solid $clr5;
+    background-color: $clr2;
+    padding: rem(10px);
+    border-radius: rem(10px);
+    align-items: center;
+    width: rem(200px);
+    height: rem(200px);
+
+    img {
+        width: rem(100px);
+        height: rem(100px);
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    p {
+        font-weight: 600;
+        margin: 0 auto;
+        font-size: larger;
+    }
+    @include for-mobile-layout {
+        width: rem(150px);
+        height: rem(150px);
+        padding: rem(2px);
+        img {
+            width: rem(85px);
+            height: rem(85px);
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        p {
+            font-size: rem(13px);
+        }
+    }
+}

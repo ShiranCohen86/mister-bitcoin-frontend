@@ -1,0 +1,60 @@
+.rates-list {
+    text-align: center;
+    padding: rem(10px);
+    background-color: $clr2;
+    border-radius: rem(10px);
+    border: 1px solid black;
+    width: 100%;
+    h2 {
+        margin-bottom: rem(20px);
+    }
+    h3 {
+        font-family: unset;
+    }
+
+    .currency-list {
+        display: flex;
+        justify-content: space-evenly;
+        gap: rem(100px);
+        .usd-rate,
+        .eur-rate,
+        .gbp-rate,
+        .cny-rate {
+            p {
+                font-family: unset;
+            }
+            display: grid;
+            grid-template-rows: auto auto auto;
+
+            align-items: center;
+            img {
+                width: rem(60px);
+                justify-self: center;
+            }
+        }
+    }
+    @include for-mobile-layout {
+        padding: rem(5px);
+        width: 100%;
+
+        h2 {
+            font-size: smaller;
+            font-weight: 600;
+            margin-bottom: rem(10px);
+        }
+
+        .currency-list {
+            gap: rem(10px);
+            .usd-rate,
+            .eur-rate,
+            .gbp-rate,
+            .cny-rate {
+                img {
+                    width: 30px;
+                }
+
+                width: rem(80px);
+            }
+        }
+    }
+}

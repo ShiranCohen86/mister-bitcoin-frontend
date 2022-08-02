@@ -1,0 +1,27 @@
+.app-footer {
+    background: linear-gradient(to bottom, rgba($clr2, 0.1) 60%, rgba($clr2, 1) 70%, rgba($clr2, 1) 100%);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    bottom: 2px;
+    width: 100%;
+    position: fixed;
+
+    img {
+        width: rem(50px);
+        border-radius: 50%;
+    }
+    .bitcoin-gif {
+        img {
+            width: rem(70px);
+            padding: 0%;
+        }
+    }
+    button {
+        border-radius: 50%;
+        background-color: $clr2;
+    }
+
+
+}

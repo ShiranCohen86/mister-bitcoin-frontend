@@ -1,0 +1,12 @@
+.signup-page {
+    form {
+        border: 1px solid black;
+        .signup-btn-is-email {
+            background-color: rgb(184, 192, 198);
+        }
+        .err-msg {
+            font-weight: 600;
+            color: red;
+        }
+    }
+}

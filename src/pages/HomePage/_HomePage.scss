@@ -1,0 +1,60 @@
+.guest {
+    .rates-list {
+        justify-self: flex-end;
+    }
+}
+.home-page {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: rem(40px);
+    border-radius: rem(10px);
+    h1 {
+        font-family: "Merienda";
+    }
+
+    .guest-welcome {
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: rem(10px);
+        align-items: center;
+        background-color: $clr2;
+        padding: rem(10px);
+        border-radius: rem(10px);
+        width: fit-content;
+        border: 1px solid black;
+
+        svg {
+            border-radius: rem(10px);
+            background-color: rgba(31, 255, 65, 0.7);
+            --main-color: $clr5;
+            --hover-color: rgba(31, 255, 65, 1);
+            // --active-color: yellow;
+        }
+        p {
+            .login-btn {
+                color: blue;
+            }
+            cursor: pointer;
+        }
+        button {
+            border-radius: rem(10px);
+            padding: rem(10px);
+            background-color: $clr6;
+        }
+    }
+
+    @include for-mobile-layout {
+        gap: rem(10px);
+        .guest-welcome {
+            // grid-row: 1/2;
+            width: 100%;
+            h1 {
+                font-size: rem(23px);
+            }
+        }
+        .user-balance {
+            width: 100%;
+        }
+    }
+}

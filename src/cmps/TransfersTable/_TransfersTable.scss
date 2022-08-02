@@ -1,0 +1,69 @@
+.transfers-table,
+.transfers-by-contact {
+    width: 100%;
+    .MuiPaper-root {
+        position: relative;
+
+        padding: rem(10px);
+        background-color: $clr2;
+        border-radius: rem(10px);
+        border: 1px solid black;
+        text-align: center;
+
+    }
+    h2 {
+        font-family: Merienda;
+        line-height: inherit;
+        margin-bottom: 0.625rem;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .amount-plus {
+        color: #258734;
+        font-weight: 600;
+    }
+    .amount-minus {
+        color: red;
+    }
+    .more-less-btn {
+        padding: 0;
+        border: unset;
+        border-radius: rem(5px);
+        position: absolute;
+        top: rem(10px);
+        right: rem(10px);
+        background-color: $clr2;
+        width: rem(35px);
+        height: rem(35px);
+ 
+    }
+
+    @include for-mobile-layout {
+        width: 100%;
+        .more-less-btn {
+            width: rem(20px);
+            height: rem(20px);
+            border-radius: rem(2px);
+        }
+        .MuiPaper-root {
+            padding: rem(5px);
+        }
+
+     
+        h2 {
+            font-size: smaller;
+            font-weight: 600;
+        }
+
+        // .MuiTable-root {
+        //     min-width: auto;
+        // }
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        .MuiTableCell-root {
+            padding: rem(2px);
+            font-size: rem(9px);
+        }
+    }
+}

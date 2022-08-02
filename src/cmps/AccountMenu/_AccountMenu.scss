@@ -1,0 +1,11 @@
+.MuiPaper-root {
+    .MuiList-root {
+        background-color: $clr2;
+        li {
+            justify-content: space-between;
+        }
+    }
+    @include for-mobile-layout {
+        width: rem(100px);
+    }
+}

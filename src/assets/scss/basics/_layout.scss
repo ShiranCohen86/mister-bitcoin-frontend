@@ -1,0 +1,44 @@
+.header-layout {
+  padding: 0 15px;
+  height: 50px;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 980px 1fr;
+  grid-template-rows: rem(80px) 1fr rem(45px);
+  gap: rem(40px);
+
+  > * {
+    grid-column: 2;
+    overflow: auto;
+  }
+
+  > .full {
+    grid-column: 1 / -1;
+  }
+
+  @include for-narrow-layout {
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows: rem(70px) 1fr rem(80px);
+    gap: rem(10px) 0;
+  }
+
+  // @include for-normal-layout {
+  //   grid-template-columns:
+  //     minmax(2rem, 1fr)
+  //     minmax(auto, $break-normal)
+  //     minmax(2rem, 1fr);
+  // }
+
+  // @include for-wide-layout {
+  //   grid-template-columns:
+  //     minmax(2rem, 1fr)
+  //     minmax(auto, $break-wide)
+  //     minmax(2rem, 1fr);
+  // }
+}
+
+.main-content {
+  flex: 1;
+}
